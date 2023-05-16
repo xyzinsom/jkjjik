@@ -1,0 +1,10 @@
+const PhoneNumber = require('awesome-phonenumber')
+async function handler(m) {
+    conn.sendContact(m.chat, `+62 882 2724 8988`, `Asrori Amin`, m)
+}
+handler.help = ['owner', 'creator']
+handler.tags = ['info']
+
+handler.command = /^(owner|creator)$/i
+
+module.exports = handler
